@@ -1,0 +1,252 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('images/background.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* 🔷 Верхній блок */
+.header {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    position: relative;
+    height: 320px;
+}
+
+.left-panel {
+    max-width: 250px;
+}
+
+.company-name {
+    font-size: 28px;
+    margin: 0;
+}
+
+.slogan {
+    font-size: 14px;
+    margin: 10px 0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.nav-section {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+
+.nav {
+    list-style-type: disc;
+    margin: 0;
+    padding-left: 20px;
+}
+
+.nav-info {
+    position: absolute;
+    top: 120px;         /* 🔻 було 80px → тепер нижче */
+    right: 40px;
+    max-width: 300px;
+    font-size: 13px;
+    background-color: rgba(255, 255, 255, 0.8); /* світлий фон для контрасту */
+    padding: 10px 15px;
+    border-radius: 8px;
+    z-index: 3;
+    color: black;       /* 🟢 текст опису буде чорним */
+}
+
+.nav-info h3 {
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.product-title {
+    position: absolute;
+    left: 58%;
+    top: 30px;
+    transform: translateX(-50%);
+    text-align: left;
+    width: 260px;
+    color: white;
+}
+
+.new-series {
+    font-size: 18px;
+    line-height: 1.3;
+    padding-right: 10px;
+}
+
+.new-series span {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.search-box {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+}
+
+.search-box input {
+    padding: 5px;
+}
+
+.search-box button {
+    padding: 5px 10px;
+    margin-left: 5px;
+}
+
+.center-image {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 180px;
+}
+
+/* 🔷 Бірюзова секція */
+.top-section-wrapper {
+    position: relative;
+    padding: 40px;
+}
+
+.top-heading-line {
+    background-color: #00BFFF;
+    height: 30px;
+    width: 100%;
+    position: absolute;
+    top: 80;
+    left: 0;
+    z-index: 1;
+}
+
+.top-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Блок із текстом і зображенням */
+.info-section {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+    width: 30%;
+}
+
+.section {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.section h3 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    color: white;
+}
+
+.info-image {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+    margin-top: 30px; /* Додає зміщення вниз */
+}
+
+/* 🔷 Продукти */
+.products {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px;
+    /* прибираємо будь-який колір, щоб просвічувався фон body */
+    background: transparent;      /* або просто видали старий background-color */
+}
+
+.product {
+    width: 30%;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: contain;
+}
+
+.product a {
+    color: blue;
+    text-decoration: underline;
+    display: block;
+    margin-top: 10px;
+}
+
+/* 🔷 Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+}
+
+.product {
+    width: 30%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: right; /* 👈 вирівнюємо текст праворуч */
+}
+
+/* Контейнер для тексту */
+.product .text-content {
+    max-width: 60%;
+    margin-top: -20px; /* 👈 піднімаємо трохи вгору */
+}
+
+/* Заголовок над описом */
+.product h4 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right; /* 👈 теж праворуч */
+    padding-right: 10px; /* 👈 трохи зміщуємо правіше */
+}
+
+.product p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: right;
+    padding-right: 10px; /* 👈 вирівнюємо опис під заголовком */
+}
+
+/* Фони для продуктів */
+.product-1 {
+    background-image: url('images/prod1.png');
+}
+
+.product-2 {
+    background-image: url('images/prod2.png');
+}
+
+.product-3 {
+    background-image: url('images/prod3.png');
+}
